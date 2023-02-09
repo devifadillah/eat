@@ -89,3 +89,50 @@ form .txt_field {
 .pass:hover{
     text-decoration: underline;
 }
+
+input[type="submit"]{
+    width: 30%;
+    height: 50px;
+    border: 1px solid;
+    background: #345B63;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #D4ECDD;
+    transition: .5s;
+}
+
+.logo-tb .imgs{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 550px;
+    top: 70px;
+    opacity: 0.5;
+}
+
+.log-google img{
+    width: 7%;
+    height: 45px;
+    margin-left: 14%;
+    margin-top: 1%;
+    /* border: 1px solid;
+    background: #345B63;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #e9f4fb;
+    font-weight: 700; */
+    cursor: pointer;
+    outline: none;
+}
+
+.log-google img:hover{
+    border-color: #D4ECDD;
+    transition: .5s;
+}

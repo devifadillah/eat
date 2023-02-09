@@ -13,8 +13,7 @@
 <body>
   <div class="center">
     <h1>SMK Taruna Bhakti</h1>
-    <div class="kiri">
-      <form action="post">
+    <form action="post">
         <div class="txt_field">
             <input type="text" required>
             <span></span>
@@ -28,15 +27,13 @@
 
         <div class="pass">Forgot Password?</div>
         <input type="submit" value="Login">
+      </form>
 
-        {{-- <div class="log-google">
-          <input type="submit" value="Login dengan Google">
-        </div> --}}
-    </form>
-            <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
-    </div>
+      <div class="log-google">
+        <a href="/auth/google/redirect"><img src="{{asset('forcss/img/logo-google-removebg-preview.png')}}" alt=""></a>
+      </div>
 
-    <div class="kanan">
+    <div class="logo-tb">
       <img class="imgs" src="{{ asset('forcss/img/logo-tb.png') }}" alt="">
     </div>
 </div>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\GedunglabControllers;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,6 @@ Route::get('/denah1/{gedung}', [GedunglabControllers::class, 'index2'])->name('d
 Route::get('/tambah/{gedung}', [GedunglabControllers::class, 'create'])->name('tambah');
 Route::post('/simpan/{gedung}', [GedunglabControllers::class, 'store'])->name('simpan');
 Route::get('/delete/{id}', [GedunglabControllers::class, 'destroy'])->name('delete');
+
+Route::get('/auth/google/redirect',[AuthController::class,'googleredirect'])->name('googlelogin');
+Route::get('/auth/google/callback',[AuthController::class,'googlecallback']);

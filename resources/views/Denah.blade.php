@@ -59,7 +59,6 @@
         <p>Lab Cobaan</p>
             <div class="sad">
                 <model-viewer src="{{ asset('forcss/3d/Lantai1.gltf') }}" alt="Denah" shadow-intensity="2" camera-controls auto-rotate ar>
-<<<<<<< HEAD
                     <button id="hotspotButton"                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 =======
                     {{-- <button id="hotspotButton"
