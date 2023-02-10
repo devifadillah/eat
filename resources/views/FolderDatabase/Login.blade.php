@@ -13,14 +13,14 @@
 <body>
   <div class="center">
     <h1>SMK Taruna Bhakti</h1>
-    <form action="post">
+    <form action="{{route('postlogin')}}">
         <div class="txt_field">
-            <input type="text" required>
+            <input type="text" name="email" required>
             <span></span>
             <label>Email</label>
         </div>
         <div class="txt_field">
-            <input type="password" required>
+            <input type="password" name="password" required>
             <span></span>
             <label>Password</label>
         </div>
@@ -30,7 +30,9 @@
       </form>
 
       <div class="log-google">
-        <a href="/auth/google/redirect"><img src="{{asset('forcss/img/logo-google-removebg-preview.png')}}" alt=""></a>
+        <a href="/auth/google/redirect"><iconify-icon icon="mdi:google-plus">
+          <input type="submit" value="Login dengan Google">
+        </iconify-icon></a>
       </div>
 
     <div class="logo-tb">
